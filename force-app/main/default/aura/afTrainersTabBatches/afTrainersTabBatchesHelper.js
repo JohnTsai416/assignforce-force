@@ -1,4 +1,13 @@
 ({
+    //Helper for collapsible sections
+    helperFun : function(component,event,secId) {
+	  var acc = component.find(secId);
+        	for(var cmp in acc) {
+        	$A.util.toggleClass(acc[cmp], 'slds-show');  
+        	$A.util.toggleClass(acc[cmp], 'slds-hide');  
+       }
+	},
+    
     //Responsible for server callback and filtering results for trainer by when batches are planned
     getData : function(component, event) {
         var userId = event.getParam("trainerId");

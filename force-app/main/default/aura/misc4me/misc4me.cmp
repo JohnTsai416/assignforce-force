@@ -1,0 +1,69 @@
+<aura:component >
+  <div class="slds-p-around--large">
+    
+     <div class="slds-page-header" style="cursor: pointer;" onclick="{!c.sectionOne}">
+      <section class="slds-clearfix">
+        <div class="slds-float--left ">
+            <lightning:icon class="slds-show" aura:id="articleOne" iconName="utility:add" size="x-small" alternativeText="Indicates add"/>
+            <lightning:icon class="slds-hide" aura:id="articleOne" iconName="utility:dash" size="x-small" alternativeText="Indicates dash"/>
+        </div>
+        <div class="slds-m-left--large">Section 1</div>
+      </section>
+    </div>
+      
+    <div class="slds-hide slds-p-around--medium" aura:id="articleOne">
+      section one is ready.section one is ready.section one is ready.
+      section one is ready.section one is ready.section one is ready.
+      section one is ready.section one is ready.section one is ready.
+    </div>
+      
+    <div class="slds-page-header" style="cursor: pointer;" onclick="{!c.sectionTwo}">
+      <section class="slds-clearfix">
+        <div class="slds-float--left">
+            <lightning:icon class="slds-show" aura:id="articleTwo" iconName="utility:add" size="x-small" alternativeText="Indicates add"/>
+            <lightning:icon class="slds-hide" aura:id="articleTwo" iconName="utility:dash" size="x-small" alternativeText="Indicates dash"/>
+        </div>
+        <div class="slds-m-left--large">Section 2</div>
+      </section>
+    </div>
+      
+    <div class="slds-hide slds-p-around--medium" aura:id="articleTwo">
+      section Two is ready.section Two is ready.section Two is ready.
+      section Two is ready.section Two is ready.section Two is ready.
+      section Two is ready.section Two is ready.section Two is ready.
+    </div>
+      
+    <div class="slds-page-header"  style="cursor: pointer;" onclick="{!c.sectionThree}">
+      <section class="slds-clearfix">
+        <div class="slds-float--left"> 
+            <lightning:icon class="slds-show" aura:id="articleThree" iconName="utility:add" size="x-small" alternativeText="Indicates add"/>
+            <lightning:icon class="slds-hide" aura:id="articleThree" iconName="utility:dash" size="x-small" alternativeText="Indicates dash"/>
+        </div>
+        <div class="slds-m-left--large">Section 3</div>
+      </section>
+    </div>
+      
+    <div aura:id="articleThree" class="slds-hide slds-p-around--medium">
+      section Three is ready.section Three is ready.section Three is ready.
+      section Three is ready.section Three is ready.section Three is ready.
+      section Three is ready.section Three is ready.section Three is ready.
+    </div>
+      
+    <div class="slds-page-header"  style="cursor: pointer;" onclick="{!c.sectionFour}">
+      <section class="slds-clearfix">
+        <div class="slds-float--left"> 
+            <lightning:icon class="slds-show" aura:id="articleFour" iconName="utility:add" size="x-small" alternativeText="Indicates add"/>
+            <lightning:icon class="slds-hide" aura:id="articleFour" iconName="utility:dash" size="x-small" alternativeText="Indicates dash"/>
+        </div>
+        <div class="slds-m-left--large">Section 4</div>
+      </section>
+    </div>
+      
+    <div aura:id="articleFour" class="slds-hide slds-p-around--medium">
+      section Four is ready.section Four is ready.section Four is ready.
+      section Four is ready.section Four is ready.section Four is ready.
+      section Four is ready.section Four is ready.section Four is ready.
+    </div>  
+      
+  </div>
+</aura:component>
