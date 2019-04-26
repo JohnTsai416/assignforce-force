@@ -162,10 +162,12 @@
         }
                        });
         //The formatting for the chart
+        var heightString = 150*trainersInData.length + 'px';
         var charts = new Highcharts.chart({
             chart: {
                 renderTo: component.find("container").getElement(),
-                type: 'xrange'
+                type: 'xrange',
+                height: heightString
             },
             title: {
                 text : component.get('v.chartTitle'),
@@ -200,9 +202,9 @@
             },
             plotOptions: {
                 series: {
-                    animation: false, //animation turned off for optimization reasons.
                     minPointLength: 50
                 },
+                //Pls don't delete this, took us 1.5 weeks to figure this out :)
                 xrange: {
                     groupPadding: .5
                 }
